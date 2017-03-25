@@ -78,4 +78,14 @@
         android:shouldDisableView="false"
         android:summary="@string/unknown_medical_conditions"
         android:title="@string/medical_conditions" />
+
+    <com.android.emergency.preferences.EmergencyEditTextPreference
+        android:enabled="false"
+        android:focusable="true"
+        android:icon="@*android:drawable/emergency_icon"
+        android:key="sos_call_number"
+        android:selectable="false"
+        android:shouldDisableView="false"
+        android:summary="@string/unknown_sos_call_number"
+        android:title="@string/sos_call_number" />
 </PreferenceScreen>

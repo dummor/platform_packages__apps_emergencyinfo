@@ -47,6 +47,9 @@ public interface PreferenceKeys {
     /** Key to store and read the organ donor choice of the user. */
     public static final String KEY_ORGAN_DONOR = "organ_donor";
 
+    /** Key to store and read the number to perform SOS call. */
+    public static final String KEY_SOS_CALL_NUMBER = "sos_call_number";
+
     /**
      * Keys for all editable emergency info preferences.
      *
@@ -54,9 +57,10 @@ public interface PreferenceKeys {
      */
     public static final String[] KEYS_EDIT_EMERGENCY_INFO = {KEY_NAME, KEY_ADDRESS,
             KEY_BLOOD_TYPE, KEY_ALLERGIES, KEY_MEDICATIONS,
-            KEY_MEDICAL_CONDITIONS, KEY_ORGAN_DONOR};
+            KEY_MEDICAL_CONDITIONS, KEY_ORGAN_DONOR, KEY_SOS_CALL_NUMBER};
 
     /** Keys for all viewable emergency info preferences */
     public static final String[] KEYS_VIEW_EMERGENCY_INFO = {KEY_ADDRESS, KEY_BLOOD_TYPE,
-            KEY_ALLERGIES, KEY_MEDICATIONS, KEY_MEDICAL_CONDITIONS, KEY_ORGAN_DONOR};
+            KEY_ALLERGIES, KEY_MEDICATIONS, KEY_MEDICAL_CONDITIONS, KEY_ORGAN_DONOR,
+            KEY_SOS_CALL_NUMBER};
 }
