@@ -19,6 +19,7 @@ import android.app.Fragment;
 import android.os.Bundle;
 import android.preference.Preference;
 import android.preference.PreferenceFragment;
+import android.provider.Settings;
 import android.text.TextUtils;
 
 import com.android.emergency.PreferenceKeys;
@@ -55,6 +56,18 @@ public class EditEmergencyInfoFragment extends PreferenceFragment {
                 }
             });
         }
+
+        Preference preference = findPreference(PreferenceKeys.KEY_SOS_CALL_NUMBER);
+        preference.setOnPreferenceChangeListener(new Preference.OnPreferenceChangeListener() {
+            @Override
+            public boolean onPreferenceChange(Preference preference, Object newValue) {
+                String number = (String) newValue;
+                String value = TextUtils.isEmpty(number) ? "" : number;
+                    Settings.Global.putString(getContext().getContentResolver(),
+                            "sos_call_number", value);
+                return true;
+            }
+        });
     }
 
     @Override

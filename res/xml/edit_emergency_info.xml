@@ -86,4 +86,15 @@
         android:singleLine="false"
         android:summary="@string/unknown_medical_conditions"
         android:title="@string/medical_conditions" />
+
+    <com.android.emergency.preferences.EmergencyEditTextPreference
+        android:capitalize="sentences"
+        android:hint="@string/sos_call_number_hint"
+        android:textColorHint="@color/hint_text_color"
+        android:icon="@*android:drawable/emergency_icon"
+        android:inputType="number"
+        android:key="sos_call_number"
+        android:singleLine="true"
+        android:summary="@string/unknown_sos_call_number"
+        android:title="@string/sos_call_number" />
 </PreferenceScreen>

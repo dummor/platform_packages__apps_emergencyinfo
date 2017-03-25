@@ -150,6 +150,12 @@
     <string name="unknown_medical_conditions">Unknown</string>
     <!-- Hint to show in the edit text of the medical conditions. [CHAR_LIMIT=30] -->
     <string name="medical_conditions_hint">For example, asthma</string>
+    <!-- The title of the SOS call number preference. [CHAR_LIMIT=40] -->
+    <string name="sos_call_number">SOS call number</string>
+    <!-- The default preference subtitle text to show when the SOS number is unknown. [CHAR_LIMIT=40] -->
+    <string name="unknown_sos_call_number">Unknown</string>
+    <!-- Hint to show in the edit text of the SOS call number. [CHAR_LIMIT=30] -->
+    <string name="sos_call_number_hint">For example, +48600123456</string>
     <!-- The title of the organ donor preference. [CHAR_LIMIT=40] -->
     <string name="organ_donor">Organ donor</string>
     <!-- The default preference subtitle text to show when the organ donor choice is unknown. [CHAR_LIMIT=40] -->
